@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    height: 80px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+    background: transparent;
+    z-index: 1000;
+}
+
+/* Logo Styles */
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    list-style: none;
+   
+}
+
+/* Navigation List Item Styles */
+nav li {
+    margin-left: 35px;
+    
+}
+
+/* Navigation Link Styles */
+nav a {
+    display: inline-block;
+    padding: 1rem 1rem;
+    
+   
+    font-size: 1rem;
+    color: white;
+    
+    font-weight: 200;
+    border-radius: 30px;
+    
+   
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+nav a:hover {
+    color: white;
+    transform: scale(1.03);
+    background-color: transparent;
+    border-radius: #8B0000;
+
+    transform: scale(1.03);
+    background-color: #8B0000;
+    color: white;
+    box-shadow: 0 0 25px #8B0000;
+}
+    
+
+/* section styling */
+section {
+    min-height: 100vh;
+    padding: 0;
+}
+
+/* home styling */
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("images/home.jpg") no-repeat center;
+
+    background-size: 90%;
+    background-color: black;
+}
+
+/* home content styling */
+.home .home-content {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.3;
+    color: white;
+    margin-top: 20px;
+    padding-top: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.home .home-content p {
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 1.3;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* span styling */
+span {
+    color: #8B0000;
+}
+
+/* transparent text styling */
+.transparent {
+    color: rgba(255, 255, 255, 0.3);
+    
+
+}
+
+
+/* h1 styling */
+h1 {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+/* typing text styling */
+.typing-text span::before {
+    content: "software Developer";
+    color: #8B0000;
+    animation: words 20s infinite;
+}
+
+
+/* cursor styling */
+ .typing-text span::after {
+    content: "";
+    background-color: transparent;
+    position: relative;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8px;
+    animation: cursor 0.6s infinite;
+}
+
+
+/* keyframes for typing text */
+@keyframes words {
+    0%, 20% { content: " to transform..."; }
+    21%, 40% { content: " to keep fit..."; }
+    41%, 60% { content: " to feel good..."; }
+    61%, 80% { content: " to build..."; }
+    81%, 100% { content: " to be disciplined..."; }
+}
+
+
+@keyframes cursor {
+    to{
+        border-left: 3px solid #8B0000;
+    }
+}
+
+/* button styling */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;   /* Smaller padding */
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 1rem;          /* Smaller text */
+    color: #8B0000;
+    font-weight: 600;
+    border: 2px solid #8B0000;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* button hover effect */
+.btn:hover {
+    transform: scale(1.03);
+    background-color: #8B0000;
+    color: white;
+    box-shadow: 0 0 25px #8B0000;
+}
+
+
+/* Responsive Design for register page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Register Page Styles */
+.register{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0.7)),
+                url("images/home.jpg") no-repeat center center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.register h1{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 40px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,.6);
+}
+
+
+/* Form Container Styles */
+.form-container{
+    width: 550px;
+    padding: 35px;
+
+    background: rgba(0,0,0,.45);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+}
+
+
+/* Form Elements Styles */
+.form-container select{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background: rgba(255,255,255,.15);
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 8px;
+
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* Form Label Styles */
+.form-container label{
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+/* Form Input Styles */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="number"],
+.form-container input[type="date"]{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background: rgba(255,255,255,.15);
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 8px;
+
+    outline: none;
+}
+
+
+/* Placeholder Text Styles */
+.form-container input::placeholder{
+    color: rgba(255,255,255,.8);
+}
+
+
+/* Radio and Checkbox Styles */
+.form-container input[type="radio"],
+.form-container input[type="checkbox"]{
+    margin-right: 8px;
+    margin-left: 10px;
+    accent-color: #8B0000;
+}
+
+
+/* Submit and Reset Button Styles */
+.form-container input[type="submit"],
+.form-container input[type="reset"]{
+    width: 48%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+/* Submit Button Styles */
+.form-container input[type="submit"]{
+    background: #8B0000;
+    color: white;
+}
+
+
+/* Submit Button Hover Effect */
+.form-container input[type="submit"]:hover{
+    background: #8B0000;
+}
+
+
+/* Reset Button Styles */
+.form-container input[type="reset"]{
+    background: white;
+    color: #8B0000;
+    float: right;
+}
+
+
+/* Reset Button Hover Effect */
+.form-container input[type="reset"]:hover{
+    background: #ddd;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width:768px){
+
+    /* Adjust form container width for smaller screens */
+    .form-container{
+        width: 95%;
+    }
+
+    /* Adjust heading size and alignment for smaller screens */
+    .register h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Adjust input and button widths for smaller screens */
+    .form-container input[type="submit"],
+    .form-container input[type="reset"]{
+        width: 100%;
+        margin-top: 10px;
+        float: none;
+    }
+}
+
+/* Additional Styles for Select Dropdown */
+.form-container select{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background: rgba(255,255,255,.15);
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 8px;
+
+    outline: none;
+    cursor: pointer;
+}
+
+/* Additional Styles for Select Options */
+.form-container select option{
+    background: #222;
+    color: white;
+}
+
+/* Success Message Styles */
+#successMessage{
+
+    display:none;
+
+    margin-top: 40px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* Navigation Styles */
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li{
+    position: relative;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* Dropdown Menu Styles for contact*/
+.dropdown-content{
+    display: none;
+
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    width: 250px;
+
+    background: rgba(0,0,0,.9);
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.4);
+
+    z-index: 1000;
+}
+
+.dropdown-content p{
+    color: white;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
